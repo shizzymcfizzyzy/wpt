@@ -186,7 +186,7 @@ async function runReportTest(test, uuid, codeToInsert, expectedNumReports = 0) {
   let reportResult = codeToInsert.reportResult;
 
   let interestGroupOverrides =
-    { biddingLogicUrl: createBiddingScriptUrl({ generateBid, reportWin }) };
+    { biddingLogicURL: createBiddingScriptUrl({ generateBid, reportWin }) };
 
   await joinInterestGroup(test, uuid, interestGroupOverrides);
   await runBasicFledgeAuctionAndNavigate(
