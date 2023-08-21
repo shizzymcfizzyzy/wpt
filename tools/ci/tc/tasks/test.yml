@@ -110,13 +110,9 @@ components:
 
   browser-firefox_android:
     privileged: true
-    kvm: true
+    # kvm: true
     scopes:
-      - "docker-worker:capability:device:kvm:proj-wpt/ci"
-      - "queue:route:checks"
-      - "queue:create-task:project:none"
-      - "queue:scheduler-id:taskcluster-github"
-      - "queue:create-task:medium:proj-wpt/ci"
+      - "docker-worker:capability:privileged"
 
 
 
