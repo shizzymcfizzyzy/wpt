@@ -113,6 +113,12 @@ components:
     kvm: true
     scopes:
       - "docker-worker:capability:device:kvm:proj-wpt/ci"
+      - "queue:route:checks"
+      - "queue:create-task:project:none"
+      - "queue:scheduler-id:taskcluster-github"
+      - "queue:create-task:medium:proj-wpt/ci"
+
+
 
   tox-python3_7:
     env:
