@@ -1,1 +1,1 @@
-// Empty service worker script.
+void
